@@ -1,0 +1,133 @@
+<html lang="en">
+
+<head>
+
+    <!-- METADATA GOES HERE -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eeveelutions</title>
+
+    <link href="style.css" rel="stylesheet">
+
+    <!-- BOOTSTRAP 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="script.js"></script>
+
+
+
+<body>
+
+    <div class="container mt-0">
+        <div class="col-12">
+            <div id="header">
+                <img src="header_eevee.png" width="100%">
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-xs-12 mt-5">
+                    <div class="Subheader">
+                        So Many Evolutions, One Little Eevee
+                    </div>
+                    <div class="text">
+                        <p>Eevee is one of Pokémon’s most beloved creatures, not because of raw power, but because of
+                            possibility. From a single starting point, Eevee can evolve into multiple forms, each with a
+                            distinct type, role, and personality. While all Eeveelutions share the same total base
+                            stats, their differences emerge through how those stats are distributed. This project
+                            explores how Pokémon uses numerical balance and specialization to create meaningful player
+                            choice.</p>
+                    </div>
+                    <div class="col-11">
+                        <canvas id="myChartEevee"></canvas>
+                    </div>
+                    <div class="text" style="padding-top:20px">
+                        Although Eevee can evolve into many different forms, every Eeveelution shares the same total
+                        base stat value. This chart shows that Pokémon design does not rely on raw numerical advantage.
+                        Instead, it uses stat distribution to create distinct roles and playstyles.
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xs-12 row">
+                    <div class="col-12 mt-5">
+                        <div class="Subheader">What kind of Eeveelution are you?</div>
+                        <div class="text">
+                            <p> Eevee’s evolutions aren’t just visual changes - they represent different ways of
+                                approaching a battle, a team, or even a personality. By comparing Eeveelution types and
+                                playstyle roles side by side, we can see how Pokémon design encourages players to choose
+                                an evolution that feels right, rather than one that is objectively stronger.</p>
+                        </div>
+                        <div class="col-12 row mb-4">
+                            <div class="col-6">
+                                <canvas id="myChartType"></canvas>
+                            </div>
+                            <div class="col-6">
+                                <canvas id="myChartRole"></canvas>
+                            </div>
+                            <div class="text" style="padding-top:20px">
+                                <p>Think of Eeveelutions like different personality types. Some rush in headfirst,
+                                    dealing damage as fast as possible, while others play the long game, focusing on
+                                    survival and support. Whether you prefer bold offense or gentle defense, there’s an
+                                    Eeveelution designed to match your style.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-3">
+                <div class="Subheader" style="padding-top:4%; padding-bottom:2%; text-align:center" ;>
+                    Everyone Has Their Strengths!
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text">Each evolution concentrates heavily on a single attribute—such as speed,
+                            attack, or HP—resulting in bold, immediately recognizable playstyles. These pronounced stat
+                            “spikes” show how Pokémon design can create distinct strategic roles through specialization
+                            while keeping overall power balanced.</div>
+                        <canvas id="myRadar1" style="padding-top:3%;"></canvas>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text">Rather than extreme specialization, these evolutions distribute their stats to
+                            support durability, sustained performance, or team support. This demonstrates how Pokémon
+                            design encourages different strategies through subtle shifts in emphasis, without changing
+                            total strength.
+                        </div>
+                        <canvas id="myRadar2" style="padding-top:3%;"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-3">
+            <div class="row">
+            <div class="col-lg-6">
+                <div class="Subheader" style="padding-top:4%;">
+                    The Many Ways to Be Strong
+                </div>
+                        <div class="text">When we look across the entire Eevee family, a pattern emerges. Most evolutions peak in special-oriented stats, particularly Special Defense and Special Attack. This suggests that Pokémon design favors adaptability, resilience, and long-term strategy over raw physical power. Even Eevee herself reflects this trend, reinforcing the idea that strength can take many forms.</div>
+                        <canvas id="strengthChart" style="padding-top:3%;"></canvas>
+            </div>
+            <div class="col-lg-6">
+                <div class="Subheader" style="padding-top:4%;">
+                    At the Heart of It All
+                </div>
+                <div class="row">
+                        <div class="text">Looking across the entire Eevee family, a clear design pattern emerges. Instead of relying on raw physical power, most evolutions emphasize special-oriented strengths such as Special Attack and Special Defense. This approach encourages adaptability, resilience, and long-term strategy, allowing each Eeveelution to excel in a distinct role without overpowering the others. At its core, Eevee represents the idea that strength is not singular — it can take many forms, all equally valid.</div>
+<canvas id="heartChart" style="max-width:440px; margin:auto;"></canvas>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <img src="Corner Eevee.png" alt="Eevee" class="corner-sticker">
+    <footer class="eevee-footer">
+  <img src="footer_eevee.png" alt="" class="footer-decor">
+</footer>
+</body>
